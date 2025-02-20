@@ -31,8 +31,9 @@ function AllArticle() {
               <Card.Body>
                 <Card.Title>{article?.title}</Card.Title>
                 <Card.Text>{article?.summary}</Card.Text>
-                <a href={`${article?.url}`}>Vai al sito</a>
-
+                <a href={`${article?.url}`} target="_blank" rel="noopener noreferrer">
+                  Vai al sito
+                </a>
                 <Link className="d-block" to={`/`}>
                   Home
                 </Link>
