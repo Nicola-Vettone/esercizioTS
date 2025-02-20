@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { IArticle } from "../interface/FetchInterface";
-import { Button, Card, Col, Container, Row } from "react-bootstrap";
+import { Card, Col, Container, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function Home() {
   const [article, setArticle] = useState<IArticle>();
@@ -30,9 +31,7 @@ function Home() {
                 <Card.Body>
                   <Card.Title>{a.title}</Card.Title>
                   <Card.Text>{a.summary}</Card.Text>
-                  <Button onClick={() => console.log(a.id)} variant="primary">
-                    Vai all'articolo
-                  </Button>
+                  <Link to={`/article/${a.id}`}>Vai all'articolo</Link>
                 </Card.Body>
               </Card>
             </Col>
