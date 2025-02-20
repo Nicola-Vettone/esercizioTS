@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { IDati } from "../interface/FetchInterface";
+import { IDati } from "../interfaces/FetchInterface";
 import { Link, useParams } from "react-router-dom";
 import { Card, Col, Container, Row } from "react-bootstrap";
 

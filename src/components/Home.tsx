@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { IArticle } from "../interface/FetchInterface";
+import { IArticle } from "../interfaces/FetchInterface";
 import { Card, Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
